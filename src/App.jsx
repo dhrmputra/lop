@@ -41,8 +41,6 @@ import nogif8 from "./assets/GifData/No/breakRej7.gif";
 //! yes - Music Importing
 import yesmusic1 from "./assets/AudioTracks/Love_LoveMeLikeYouDo.mp3";
 import yesmusic2 from "./assets/AudioTracks/Love_EDPerfect.mp3";
-import yesmusic3 from "./assets/AudioTracks/Love_Nadaaniyan.mp3";
-import yesmusic4 from "./assets/AudioTracks/Love_JoTumMereHo.mp3";
 //! no - Music Importing
 import nomusic1 from "./assets/AudioTracks/Rejection_WeDontTalkAnyMore.mp3";
 import nomusic2 from "./assets/AudioTracks/Rejection_LoseYouToLoveMe.mp3";
@@ -52,7 +50,7 @@ import nomusic5 from "./assets/AudioTracks/Reject1_TooGood.mp3";
 
 const YesGifs = [yesgif0, yesgif1, yesgif2, yesgif3, yesgif4, yesgif5, yesgif6, yesgif7, yesgif8, yesgif9, yesgif10, yesgif11];
 const NoGifs = [nogif0, nogif0_1, nogif1, nogif2, nogif3, nogif4, nogif5, nogif6, nogif7, nogif8];
-const YesMusic = [yesmusic1, yesmusic3, yesmusic4, yesmusic2];
+const YesMusic = [yesmusic1, yesmusic2];
 const NoMusic = [nomusic1, nomusic2, nomusic3, nomusic4, nomusic5];
 
 export default function Page() {
@@ -247,7 +245,7 @@ export default function Page() {
   useEffect(() => {
     if (yesPressed && noCount < 4 && !popupShown) {
       Swal.fire({
-        title: "I love you sooo Much!!!❤️, You’ve stolen my heart completely!!! 🥰💖 But itni pyaari ladki aur itni jaldi haan? Thoda aur nakhre karke mujhe tarpaao na! 🥰✨",
+        title: "I love you sooo Much!!!❤️, You’ve stolen my heart completely!!! 🥰💖 But with a girl as cute as you, who says yes so quickly? Don't tease me by being a little pickier!🥰✨",
         showClass: {
           popup: `
             animate__animated
@@ -311,8 +309,8 @@ export default function Page() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-screen h-screen -z-10">
-        <Spline scene="https://prod.spline.design/oSxVDduGPlsuUIvT/scene.splinecode" />
+      <div className="fixed top-0 left-0 w-screen h-screen -z-10 bg-gradient-to-r from-blue-700 to-cyan-300">
+        {/* <Spline scene="https://prod.spline.design/oSxVDduGPlsuUIvT/scene.splinecode" /> */}
         {/* <Spline scene="https://prod.spline.design/ZU2qkrU9Eyt1PHBx/scene.splinecode" /> */}
       </div>
 
@@ -327,17 +325,13 @@ export default function Page() {
               src={YesGifs[currentGifIndex]}
               alt="Yes Response"
             />
-            <div className="text-4xl md:text-6xl font-bold my-2" style={{ fontFamily: "Charm, serif", fontWeight: "700", fontStyle: "normal" }}>I Love You !!!</div>
-            <div  className="text-4xl md:text-4xl font-bold my-1" style={{ fontFamily: "Beau Rivage, serif", fontWeight: "500", fontStyle: "normal" }}> You’re the love of my life. </div> 
+            <div className="text-4xl md:text-6xl font-bold my-2" style={{ fontFamily: "Charm, serif", fontWeight: "700", fontStyle: "normal" }}>I Love You Airin!!!</div>
+            <div  className="text-4xl md:text-4xl font-bold my-1" style={{ fontWeight: "500", fontStyle: "normal" }}> You’re the love of my life. </div> 
             <WordMareque />
           </>
         ) : (
           <>
-            <img
-              src={lovesvg}
-              className="fixed animate-pulse top-10 md:left-15 left-6 md:w-40 w-28"
-              alt="Love SVG"
-            />
+
             <img
               ref={gifRef}
               className="h-[230px] rounded-lg"
@@ -345,7 +339,7 @@ export default function Page() {
               alt="Love Animation"
             />
             <h1 className="text-4xl md:text-6xl my-4 text-center">
-              Will you be my Valentine?
+              Do You Love Buraddo?
             </h1>
             <div className="flex flex-wrap justify-center gap-2 items-center">
               <button
@@ -393,7 +387,7 @@ const Footer = () => {
   return (
     <a
       className="fixed bottom-2 right-2 backdrop-blur-md opacity-80 hover:opacity-95 border p-1 rounded border-rose-300"
-      href="https://github.com/UjjwalSaini07"
+      href="https://github.com/dhrmputra"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -401,7 +395,7 @@ const Footer = () => {
       <span role="img" aria-label="heart">
         ❤️
       </span>
-      {" "}by Ujjwal
+      {" "}by Burado
     </a>
   );
 };
