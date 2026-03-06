@@ -325,7 +325,7 @@ export default function Page() {
               src={YesGifs[currentGifIndex]}
               alt="Yes Response"
             />
-            <div className="text-4xl md:text-6xl font-bold my-2" style={{ fontFamily: "Charm, serif", fontWeight: "700", fontStyle: "normal" }}>I Love You Airin!!!</div>
+            <div className="text-4xl md:text-6xl font-bold my-2" style={{ fontFamily: "Charm, serif", fontWeight: "700", fontStyle: "normal" }}>I Love You Too Airin!!!</div>
             <div  className="text-4xl md:text-4xl font-bold my-1" style={{ fontWeight: "500", fontStyle: "normal" }}> You’re the love of my life. </div> 
             <WordMareque />
           </>
